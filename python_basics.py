@@ -95,6 +95,18 @@ for letter in name:
     print(letter, end = "-") # going to print the value of letter, return ' ', 'M', 'a', 'd', 'i', 'n', 'a', ' ', 'A', 'l', 'i', 'z', 'a', 'd', 'a' with a hyphen between each letter
 
 # Lists []: used to store multiple values in a single variable, lists are ordered, changeable, and allow duplicate values, lists are defined using square brackets [] and the values are separated by commas.
+# Python lists are objects that can hold different types of data, including other lists
+
+families = ["Smith", "Johnson", "Williams", "Brown", "Jones"] # going to create a list of families and assign it to the variable families
+# slicing a list:
+print(families[0:3]) # going to print the first three elements of the list families, return ['Smith', 'Johnson', 'Williams'], not gonna give us index 3 because it is exclusive
+print(families[:3]) # going to print the first three elements of the list families
+# we can also use negative indexing to access the elements of a list, -1 is the last element, -2 is the second last element, and so on.
+print(families[-1]) # going to print the last element of the list families, return 'Jones'
+print(families[-3:]) # going to print the last three elements of the list families, return ['Williams', 'Brown', 'Jones']
+
+
+
 
 # tuple () is similar to a list, but it is immutable, meaning that the values cannot be changed after they are created, tuples are defined using parentheses () and the values are separated by commas.
 
