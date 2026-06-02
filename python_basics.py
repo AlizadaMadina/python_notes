@@ -105,6 +105,11 @@ print(families[:3]) # going to print the first three elements of the list famili
 print(families[-1]) # going to print the last element of the list families, return 'Jones'
 print(families[-3:]) # going to print the last three elements of the list families, return ['Williams', 'Brown', 'Jones']
 
+# to delete element from the list we can 
+del families[0] # going to delete the first element of the list families, return 'Smith'
+print(families)
+
+# !!!!!!! to subset list of lists we can use double indexing, the first index will give us the list and the second index will give us the element of that list.
 
 
 
