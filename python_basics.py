@@ -33,7 +33,7 @@ gpa = int(gpa) # going to convert gpa to an integer, return 3
 print(gpa)
 age = float(age) # going to convert age to a float, return 5.0
 print(type(age)) # going to return the data type of age, return <class 'float'>
-age = str(age) # going to convert age to a string, return '5.0'
+# age = str(age) # going to convert age to a string, return '5.0'
 print(type(age)) # going to return the data type of age, return <class 'str'>
 name = bool(name) # going to convert name to a boolean, return True
 print(name) # going to print the value of name, return True
@@ -105,12 +105,22 @@ print(families[:3]) # going to print the first three elements of the list famili
 print(families[-1]) # going to print the last element of the list families, return 'Jones'
 print(families[-3:]) # going to print the last three elements of the list families, return ['Williams', 'Brown', 'Jones']
 
-# to delete element from the list we can 
-del families[0] # going to delete the first element of the list families, return 'Smith'
-print(families)
+
+# adding elements to the list with indexing:
+families[0] = "Miller" # going to change the first element of the
+families[0:3] = ["Miller", "Davis", "Garcia"] # going to change the first three elements of the list families
+print(families) # going to print the list families, return ['Miller', 'Davis', 'Garcia', 'Brown', 'Jones']
+
+# if we have another list and we want to combine them we can just use the + operator to concatenate the two lists, this will create a new list that contains all the elements of both lists.
+
+
 
 # !!!!!!! to subset list of lists we can use double indexing, the first index will give us the list and the second index will give us the element of that list.
 
+
+# to delete element from the list we can 
+del families[0] # going to delete the first element of the list families, return 'Smith'
+print(families)
 
 
 # tuple () is similar to a list, but it is immutable, meaning that the values cannot be changed after they are created, tuples are defined using parentheses () and the values are separated by commas.
@@ -131,10 +141,13 @@ fruits.remove("grape") # going to remove 'grape' from the list fruits
 print(fruits) # going to print the list fruits, return ['apple', 'orange', 'kiwi']
 fruits.pop(0) # going to remove the first element of the list fruits, return 'apple'
 
+# round() function: takes 2 arguments, the first argument is the number to be rounded and the second argument is the number of decimal places to round to,
+#  if the second argument is not provided, it will round to the nearest integer.
+gpa = 2.359758
+rounded_gpa = round(gpa, 2) # going to round gpa to 2 decimal places, return 2.36
+print(rounded_gpa) # going to print the value of rounded_gpa, return 2.36
 
-
-
-
-
+ # help(round) this will give us the documentation of the round() function, it will show us the syntax, parameters, and return value of the function.
+ # ?round same as help(round)
 
 
